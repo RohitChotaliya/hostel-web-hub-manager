@@ -90,7 +90,7 @@ const StudentCard = ({ student, onView, onEdit }: StudentCardProps) => {
           </div>
           <div className="flex items-center text-sm">
             <IndianRupee className="mr-2 h-4 w-4 text-muted-foreground" />
-            Monthly Rate: ₹{student.monthlyRate.toLocaleString()}
+            Monthly Rate: ₹{student.monthlyRate?.toLocaleString() || '0'}
           </div>
           <div className="mt-2 text-sm">
             <span className="font-medium">Room:</span> {student.room}

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -93,7 +94,7 @@ const RoomCard = ({ room, onView, onEdit }: RoomCardProps) => {
           </div>
           <div className="flex items-center text-sm">
             <IndianRupee className="mr-2 h-4 w-4 text-muted-foreground" />
-            <span>Monthly Rate: ₹{room.monthlyRate.toLocaleString()}</span>
+            <span>Monthly Rate: ₹{room.monthlyRate?.toLocaleString() || '0'}</span>
           </div>
         </div>
       </CardContent>

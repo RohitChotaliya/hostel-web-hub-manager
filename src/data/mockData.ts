@@ -1,3 +1,4 @@
+
 // Mock data for demonstration purposes
 export const studentsData = [
   {
@@ -125,6 +126,7 @@ export const roomsData = [
     occupied: 0,
     floor: "1st",
     block: "A",
+    monthlyRate: 6000,
     facilities: ["Attached Bathroom", "Study Table", "Wi-Fi", "AC"],
     occupants: []
   },
@@ -136,6 +138,7 @@ export const roomsData = [
     occupied: 1,
     floor: "1st",
     block: "A",
+    monthlyRate: 4000,
     facilities: ["Common Bathroom", "Study Table", "Wi-Fi"],
     occupants: ["3"]
   },
@@ -147,6 +150,7 @@ export const roomsData = [
     occupied: 1,
     floor: "2nd",
     block: "A",
+    monthlyRate: 5000,
     facilities: ["Attached Bathroom", "Study Table", "Wi-Fi"],
     occupants: ["4"]
   },
@@ -158,6 +162,7 @@ export const roomsData = [
     occupied: 1,
     floor: "2nd",
     block: "A",
+    monthlyRate: 6000,
     facilities: ["Attached Bathroom", "Study Table", "Wi-Fi", "AC"],
     occupants: ["5"]
   },
@@ -169,6 +174,7 @@ export const roomsData = [
     occupied: 1,
     floor: "2nd",
     block: "A",
+    monthlyRate: 5000,
     facilities: ["Attached Bathroom", "Study Table", "Wi-Fi"],
     occupants: ["6"]
   },
@@ -180,6 +186,7 @@ export const roomsData = [
     occupied: 0,
     floor: "3rd",
     block: "A",
+    monthlyRate: 4000,
     facilities: ["Common Bathroom", "Study Table", "Wi-Fi"],
     occupants: []
   },
@@ -191,6 +198,7 @@ export const roomsData = [
     occupied: 0,
     floor: "3rd",
     block: "A",
+    monthlyRate: 5000,
     facilities: ["Attached Bathroom", "Study Table", "Wi-Fi"],
     occupants: []
   }
