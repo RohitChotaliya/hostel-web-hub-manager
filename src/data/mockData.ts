@@ -1,4 +1,3 @@
-
 // Mock data for demonstration purposes
 export const studentsData = [
   {
@@ -11,6 +10,7 @@ export const studentsData = [
     status: "active" as const,
     joiningDate: "2023-08-15",
     endDate: "2024-07-30",
+    monthlyRate: 5000,
     fees: {
       status: "paid",
       amount: 45000,
@@ -27,6 +27,7 @@ export const studentsData = [
     status: "active" as const,
     joiningDate: "2023-08-10",
     endDate: "2024-06-30",
+    monthlyRate: 5000,
     fees: {
       status: "due",
       amount: 45000,
@@ -43,6 +44,7 @@ export const studentsData = [
     status: "inactive" as const,
     joiningDate: "2023-07-25",
     endDate: "2024-05-30",
+    monthlyRate: 5000,
     fees: {
       status: "paid",
       amount: 45000,
@@ -59,6 +61,7 @@ export const studentsData = [
     status: "active" as const,
     joiningDate: "2023-08-05",
     endDate: "2024-06-15",
+    monthlyRate: 5000,
     fees: {
       status: "paid",
       amount: 45000,
@@ -75,6 +78,7 @@ export const studentsData = [
     status: "pending" as const,
     joiningDate: "2023-09-01",
     endDate: "2024-08-15",
+    monthlyRate: 5000,
     fees: {
       status: "pending",
       amount: 45000,
@@ -91,6 +95,7 @@ export const studentsData = [
     status: "active" as const,
     joiningDate: "2023-08-20",
     endDate: "2024-07-10",
+    monthlyRate: 5000,
     fees: {
       status: "paid",
       amount: 45000,
@@ -108,8 +113,9 @@ export const roomsData = [
     occupied: 2,
     floor: "1st",
     block: "A",
+    monthlyRate: 5000,
     facilities: ["Attached Bathroom", "Study Table", "Wi-Fi"],
-    occupants: ["1", "2"] // Student IDs
+    occupants: ["1", "2"]
   },
   {
     id: "2",

@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { Button } from '@/components/ui/button';
-import { MoreHorizontal, Users } from 'lucide-react';
+import { MoreHorizontal, Users, IndianRupee } from 'lucide-react';
 import { 
   DropdownMenu, 
   DropdownMenuContent, 
@@ -21,6 +20,7 @@ interface RoomCardProps {
     occupied: number;
     floor: string;
     block: string;
+    monthlyRate: number;
   };
   onView: (id: string) => void;
   onEdit: (id: string) => void;
@@ -87,9 +87,13 @@ const RoomCard = ({ room, onView, onEdit }: RoomCardProps) => {
         </div>
         
         <div className="mt-4">
-          <div className="flex items-center text-sm">
+          <div className="flex items-center text-sm mb-2">
             <Users className="mr-2 h-4 w-4 text-muted-foreground" />
             <span>Room Type: {room.type}</span>
+          </div>
+          <div className="flex items-center text-sm">
+            <IndianRupee className="mr-2 h-4 w-4 text-muted-foreground" />
+            <span>Monthly Rate: ₹{room.monthlyRate.toLocaleString()}</span>
           </div>
         </div>
       </CardContent>

@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { MoreHorizontal, Mail, Phone } from 'lucide-react';
+import { MoreHorizontal, Mail, Phone, IndianRupee } from 'lucide-react';
 import { 
   DropdownMenu, 
   DropdownMenuContent, 
@@ -20,6 +20,7 @@ interface StudentCardProps {
     phone: string;
     room: string;
     course: string;
+    monthlyRate: number;
     status: 'active' | 'inactive' | 'pending';
   };
   onView: (id: string) => void;
@@ -86,6 +87,10 @@ const StudentCard = ({ student, onView, onEdit }: StudentCardProps) => {
           <div className="flex items-center text-sm">
             <Phone className="mr-2 h-4 w-4 text-muted-foreground" />
             {student.phone}
+          </div>
+          <div className="flex items-center text-sm">
+            <IndianRupee className="mr-2 h-4 w-4 text-muted-foreground" />
+            Monthly Rate: ₹{student.monthlyRate.toLocaleString()}
           </div>
           <div className="mt-2 text-sm">
             <span className="font-medium">Room:</span> {student.room}
